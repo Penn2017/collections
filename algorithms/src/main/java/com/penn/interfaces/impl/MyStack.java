@@ -1,5 +1,8 @@
 package com.penn.interfaces.impl;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Stack;
 
 /***
@@ -10,6 +13,7 @@ public class MyStack {
     private Stack<Integer> dataStack = new Stack<Integer>();/*数据栈*/
     private Stack<Integer> minStack = new Stack<Integer>();/*最小值栈*/
 
+    private static final Logger logger = LoggerFactory.getLogger(MyStack.class);
 
     /**
      * 添加value
@@ -44,7 +48,7 @@ public class MyStack {
 
     public void popData(){
         if (dataStack.isEmpty()) {
-            System.out.println("数据栈为空");
+            logger.error("数据栈为空");
             return ;
         }
         Integer value = dataStack.pop();
@@ -60,9 +64,9 @@ public class MyStack {
      */
     public Integer getMin(){
         if (minStack.isEmpty()) {
-            System.out.println("the minest is:"+minStack.peek());
             throw new RuntimeException("数据栈为空");
         }
+        logger.info("the minest is:",minStack.peek());
         return minStack.peek();
     }
 
@@ -71,8 +75,7 @@ public class MyStack {
         myStack.putData(1);
         myStack.putData(4);
         myStack.putData(35);
-        System.out.println(myStack.getMin());
-
+        logger.info("the minest is:",myStack.getMin());
     }
 
 
