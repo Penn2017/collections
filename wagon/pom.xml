@@ -47,7 +47,6 @@
 
         <plugins>
             <!-- 打包jar文件时，配置manifest文件，加入lib包的jar依赖 -->
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -106,7 +105,7 @@
                             <toDir>data/www/remote-service-develop</toDir>
                             <commands>
                                 <!--重启服务-->
-                                <!--<command>/data/www/remote-service-develop/wagon.sh start</command>-->
+                                <command>/data/www/remote-service-develop/wagon.sh restart</command>
                             </commands>
                             <!-- 显示运行命令的输出结果 -->
                             <displayCommandOutputs>true</displayCommandOutputs>
@@ -115,7 +114,6 @@
                             <goal>upload</goal>
                             <goal>sshexec</goal>
                         </goals>
-
                     </execution>
                 </executions>
             </plugin>
