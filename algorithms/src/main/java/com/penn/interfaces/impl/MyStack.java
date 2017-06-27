@@ -64,7 +64,7 @@ public class MyStack {
      */
     public Integer getMin(){
         if (minStack.isEmpty()) {
-            throw new RuntimeException("数据栈为空");
+            throw new StackIsEmptyException("数据栈为空");
         }
         logger.info("the minest is:",minStack.peek());
         return minStack.peek();
@@ -76,6 +76,17 @@ public class MyStack {
         myStack.putData(4);
         myStack.putData(35);
         logger.info("the minest is:",myStack.getMin());
+    }
+
+
+    class StackIsEmptyException extends RuntimeException{
+        public StackIsEmptyException(){
+            super();
+        }
+        public StackIsEmptyException(String message){
+            super(message);
+        }
+
     }
 
 
