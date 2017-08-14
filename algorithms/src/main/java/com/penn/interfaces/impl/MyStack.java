@@ -3,6 +3,7 @@ package com.penn.interfaces.impl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 /***
@@ -71,11 +72,14 @@ public class MyStack {
     }
 
     public static void main(String[] args) {
-        MyStack myStack = new MyStack();
-        myStack.putData(1);
-        myStack.putData(4);
-        myStack.putData(35);
-        logger.info("the minest is:",myStack.getMin());
+//        MyStack myStack = new MyStack();
+//        myStack.putData(1);
+//        myStack.putData(4);
+//        myStack.putData(35);
+//        logger.info("the minest is:",myStack.getMin());
+
+        Arrays.asList(1, 2, 3, 4).stream().forEach((e) -> {System.out.println(e);});
+
     }
 
 

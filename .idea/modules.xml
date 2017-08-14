@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/algorithms/algorithms.iml" filepath="$PROJECT_DIR$/algorithms/algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cglib-test/cglib-test.iml" filepath="$PROJECT_DIR$/cglib-test/cglib-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections.iml" filepath="$PROJECT_DIR$/collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elastic-job-test/elastic-job-test.iml" filepath="$PROJECT_DIR$/elastic-job-test/elastic-job-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-framework/spring-framework.iml" filepath="$PROJECT_DIR$/spring-framework/spring-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/start-ide/start-ide.iml" filepath="$PROJECT_DIR$/start-ide/start-ide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-project/test-project.iml" filepath="$PROJECT_DIR$/test-project/test-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/wagon/wagon.iml" filepath="$PROJECT_DIR$/wagon/wagon.iml" />
     </modules>
   </component>

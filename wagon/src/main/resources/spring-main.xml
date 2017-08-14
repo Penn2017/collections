@@ -5,6 +5,6 @@
     <!--引入dubbo文件-->
     <import resource="classpath:spring-dubbo.xml"/>
 
-
+    <beans profile=""></beans>
 
 </beans>
